@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import Hero from './components/Hero'
 import Education from './components/Education'
+import Projects from './components/Projects'
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       <Hero/>
       <Education/>
+      <Projects/>
     </>
   );
 }
