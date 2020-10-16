@@ -1,6 +1,5 @@
 import React from "react"
 import { FaAlignRight } from "react-icons/fa"
-import { Container, Row } from "reactstrap"
 import PageLinks from '../constants/links'
 
 const Navbar = ({ toggleSidebar }) => {
