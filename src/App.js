@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Education from './components/Education'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
+import Activities from './components/Activities'
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       <Hero/>
       <Education/>
+      <Activities />
       <Projects/>
       <Skills />
     </>

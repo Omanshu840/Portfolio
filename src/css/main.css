@@ -501,6 +501,30 @@ Education Section
 
 /*
 =============== 
+Activities
+===============
+*/
+
+.activity {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: var(--clr-grey-10);
+  box-shadow: var(--dark-shadow);
+}
+
+.act-img {
+  margin: auto;
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.act-decription {
+  padding: 50px;
+  margin: auto;
+}
+
+/*
+=============== 
 Projects
 ===============
 */
