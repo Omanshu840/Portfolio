@@ -626,3 +626,31 @@ Projects
     text-align: left;
   }
 }
+
+/*
+=============== 
+Skills
+===============
+*/
+
+.skills {
+  text-align: center;
+}
+
+.skill-subset {
+  padding: 50px;
+  background-color: var(--clr-grey-10);
+  margin: 20px auto;
+  align-items: center;
+  box-shadow: var(--dark-shadow);
+}
+
+.skill {
+  /* background-color: #2caeba; */
+  margin: 10px auto;
+  padding: 10px;
+  width: 110px;
+  -moz-box-shadow:    inset 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow:         inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
