@@ -806,10 +806,10 @@ Skills
 
 .skill {
   /* background-color: #2caeba; */
-  margin: 10px auto;
-  padding: 10px;
-  width: 110px;
-  -moz-box-shadow:    inset 0 0 10px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
-  box-shadow:         inset 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  margin-top: 15px;
+}
+
+progress {
+  width: 100%;
 }
