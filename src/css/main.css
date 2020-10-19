@@ -505,22 +505,157 @@ Activities
 ===============
 */
 
-.activity {
+/* .activity {
   margin-top: 40px;
   margin-bottom: 40px;
   background-color: var(--clr-grey-10);
   box-shadow: var(--dark-shadow);
-}
+} */
 
 .act-img {
-  margin: auto;
-  max-height: 150px;
-  max-width: 150px;
+  max-height: 100px;
+  max-width: 100px;
+  margin-bottom: 25px;
 }
 
-.act-decription {
+/* .act-decription {
   padding: 50px;
   margin: auto;
+} */
+
+.Timeline {
+  position: relative;
+}
+
+.Timeline::before {
+  content: '';
+  background: #2b7a78;
+  width: 5px;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item-right, .timeline-item-left {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.timeline-item-right .timeline-content {
+  float: right;
+  padding: 50px 30px 10px 30px;
+}
+
+.timeline-item-left .timeline-content {
+  padding: 50px 30px 10px 30px;
+}
+
+.timeline-item-right .timeline-content .date {
+  right: auto;
+  left: 0;
+}
+
+.timeline-item-right .timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  left: -15px;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #DEF2F1 transparent transparent;
+}
+
+.timeline-item-right::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.timeline-item-left::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #DEF2F1;
+  text-align: center;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+}
+
+
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -15px;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #DEF2F1;
+}
+
+.timeline-img {
+  width: 30px;
+  height: 30px;
+  background: #17252a;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+}
+
+.date {
+  background: #2B7A78;
+  display: inline-block;
+  color: #FEFFFF;
+  font-size: 15px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .Timeline::before {
+    left: 50px;
+  }
+  .Timeline .timeline-img {
+    left: 50px;
+  }
+  .Timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 70px;
+  }
+  .Timeline .timeline-item-right .timeline-content {
+    float: none;
+  }
+  .Timeline .timeline-item-left .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
+
+  .timeline-item-left .timeline-content .date {
+      right: auto;
+      left: 0;
+  }
 }
 
 /*
