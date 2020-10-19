@@ -1,5 +1,6 @@
 import React from "react"
 import { FaAngleDoubleRight } from "react-icons/fa"
+import Fade from 'react-reveal/Fade';
 
 const data = [
     {
@@ -37,32 +38,38 @@ const Education = () => {
     return (
         <div className="section-even education">
             <div className="section-title">
-                <h2>Education</h2>
-                <div className="underline"></div>
+                <Fade top>
+                    <h2>Education</h2>
+                    <div className="underline"></div>
+                </Fade>
             </div>
             <div className="edu-container">
                 <div className="btn-container">
-                    {data.map((item, index) => {
-                        return (
-                        <button 
-                            key={item.id} 
-                            className={`edu-btn ${index === value && "active-btn"}`}
-                            onClick={() => setValue(index)}
-                        >
-                            {item.tab} 
-                        </button>
-                        )
-                    })}
+                    <Fade top>
+                        {data.map((item, index) => {
+                            return (
+                            <button 
+                                key={item.id} 
+                                className={`edu-btn ${index === value && "active-btn"}`}
+                                onClick={() => setValue(index)}
+                            >
+                                {item.tab} 
+                            </button>
+                            )
+                        })}
+                    </Fade>
                 </div>
-                <div className="edu-info">
-                    <h3>{degree}</h3>
-                    <h4>{institute}</h4>
-                    <p className="edu-date">{time}</p>
-                    <div className="edu-desc">
-                        <FaAngleDoubleRight className="edu-icon"></FaAngleDoubleRight>
-                        <p>{grade}</p>
+                <Fade top>
+                    <div className="edu-info">
+                            <h3>{degree}</h3>
+                            <h4>{institute}</h4>
+                            <p className="edu-date">{time}</p>
+                            <div className="edu-desc">
+                                <FaAngleDoubleRight className="edu-icon"></FaAngleDoubleRight>
+                                <p>{grade}</p>
+                            </div>
                     </div>
-                </div>
+                </Fade>
             </div>
             
         </div>

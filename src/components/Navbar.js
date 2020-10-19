@@ -8,7 +8,7 @@ const Navbar = ({ toggleSidebar, toggleDarkMode, darkMode}) => {
           <nav className="navbar">
             <div className="nav-center">
               <div className="nav-header">
-                <img src="./" alt="logo" />
+                <h2>O M</h2>
                 <button className="toggle-btn" onClick={toggleSidebar}>
                   <FaAlignRight></FaAlignRight>
                 </button> 

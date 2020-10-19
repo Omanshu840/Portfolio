@@ -1,4 +1,5 @@
 import React from "react"
+import Fade from 'react-reveal/Fade';
 
 class Skills extends React.Component {
 
@@ -11,43 +12,47 @@ class Skills extends React.Component {
 
         return (
             <div className="section-odd skills">
-                <div className="section-title">
-                    <h2>Skills</h2>
-                    <div className="underline"></div>
-                </div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12 col-md-5 skill-subset">
-                            <h3>Development</h3>
-                                {data.development.map(item => {
-                                    return (
-                                        <div className="skill">
-                                            <div className="col-12">
-                                                {item[0]}
-                                            </div>
-                                            <div className="col-12">
-                                                <progress id="file" value={item[1]} max="100"></progress>
-                                            </div>
-                                        </div>
-                                     )
-                                })}
-                        </div>
-                        <div className="col-12 col-md-5 skill-subset">
-                            <h3>Frameworks</h3>
-                                {data.frameworks.map(item => {
-                                    return (
-                                        <div className="skill">
-                                            <div className="col-12">
-                                                {item[0]}
-                                            </div>
-                                            <div className="col-12">
-                                                <progress id="file" value={item[1]} max="100"></progress>
-                                            </div>
-                                        </div>
-                                    )
-                                })}
-                        </div>
+                <Fade top>
+                    <div className="section-title">
+                        <h2>Skills</h2>
+                        <div className="underline"></div>
                     </div>
+                </Fade>
+                <div className="container">
+                    <Fade top>
+                        <div className="row">
+                            <div className="col-12 col-md-5 skill-subset">
+                                <h3>Development</h3>
+                                    {data.development.map(item => {
+                                        return (
+                                            <div className="skill">
+                                                <div className="col-12">
+                                                    {item[0]}
+                                                </div>
+                                                <div className="col-12">
+                                                    <progress id="file" value={item[1]} max="100"></progress>
+                                                </div>
+                                            </div>
+                                        )
+                                    })}
+                            </div>
+                            <div className="col-12 col-md-5 skill-subset">
+                                <h3>Frameworks</h3>
+                                    {data.frameworks.map(item => {
+                                        return (
+                                            <div className="skill">
+                                                <div className="col-12">
+                                                    {item[0]}
+                                                </div>
+                                                <div className="col-12">
+                                                    <progress id="file" value={item[1]} max="100"></progress>
+                                                </div>
+                                            </div>
+                                        )
+                                    })}
+                            </div>
+                        </div>
+                    </Fade>
                 </div>
             </div>        
     )}

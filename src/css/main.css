@@ -18,10 +18,10 @@ Variables
 }
 
 .light-mode {
-  --pricolor-1: #fff0f0;
-  --pricolor-2: #ebd4d4;
-  --seccolor-1: #835858;
-  --seccolor-2: #463333;
+  --pricolor-1: #fdfcfb;
+  --pricolor-2: #f6f2ea;
+  --seccolor-1: #783884;
+  --seccolor-2: #39134e;
 }
 
 .dark-mode {
@@ -192,6 +192,11 @@ Navbar
     justify-content: space-between;
     align-items: center;
   }
+
+  .nav-header h2 {
+    color: var(--seccolor-2);
+  }
+
   .nav-header img {
     margin-bottom: 0.375rem;
   }
@@ -893,6 +898,7 @@ Skills
 progress {
   width: 100%;
 }
+
 
 /*
 =============== 
