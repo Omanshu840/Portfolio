@@ -2,12 +2,15 @@ import React from "react"
 import { Container} from "reactstrap";
 import socialLinks from '../constants/socialLinks'
 
-const Hero = () => {
+const Hero = ({toggleDarkMode}) => {
 
     return (
-        <div className="hero">
+        <div className="hero section-odd">
             <Container>
-                <div className="col-12 col-md-8 hero-text">
+                {/* <div className="toggle-container">
+                  <button onClick={toggleDarkMode}>Toggle Mode</button>
+                </div> */}
+                <div className="col-12 col-md-12 hero-text">
                     <div className="underline"></div>
                     <h1>Omanshu Mahawar</h1>
                     <h5>3rd Year CSE Under Graduate</h5>

@@ -10,7 +10,7 @@ class Skills extends React.Component {
         }
 
         return (
-            <div className="section skills">
+            <div className="section-odd skills">
                 <div className="section-title">
                     <h2>Skills</h2>
                     <div className="underline"></div>

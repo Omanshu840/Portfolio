@@ -15,17 +15,22 @@ const App = () => {
     setIsOpen(!isOpen)
   }
 
+  const [darkMode, setDarkMode] = React.useState(false)
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode)
+  }
+
   return (
-    <>
-      <Navbar toggleSidebar={toggleSidebar} />
+    <div className={darkMode ? "dark-mode" : "light-mode"}>
+      <Navbar toggleSidebar={toggleSidebar} toggleDarkMode={toggleDarkMode} />
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-      <Hero/>
+      <Hero toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
       <Education/>
       <Activities />
       <Projects/>
       <Skills />
       <Footer />
-    </>
+    </div>
   );
 }
 

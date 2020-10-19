@@ -35,7 +35,7 @@ const Education = () => {
     const { institute, degree, grade, time} = data[value]
 
     return (
-        <div className="section education">
+        <div className="section-even education">
             <div className="section-title">
                 <h2>Education</h2>
                 <div className="underline"></div>

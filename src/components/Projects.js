@@ -8,7 +8,7 @@ class Projects extends React.Component {
     render() {
 
         return (
-            <div className="section projects">
+            <div className="section-even projects">
                 <div className="section-title">
                     <h2>Projects</h2>
                     <div className="underline"></div>
@@ -28,7 +28,7 @@ class Projects extends React.Component {
                                         </p>
                                         <div className="project-stack">
                                             {item.stack.map(tool => {
-                                                return <span>{tool}</span>
+                                                return <span className="stack-item">{tool}</span>
                                             })}
                                         </div>
                                         <div className="project-links">

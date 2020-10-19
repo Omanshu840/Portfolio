@@ -2,7 +2,8 @@ import React from "react"
 import { FaAlignRight } from "react-icons/fa"
 import pageLinks from '../constants/pageLinks'
 
-const Navbar = ({ toggleSidebar }) => {
+const Navbar = ({ toggleSidebar, toggleDarkMode, darkMode}) => {
+
     return (
           <nav className="navbar">
             <div className="nav-center">
@@ -22,6 +23,20 @@ const Navbar = ({ toggleSidebar }) => {
                     })
                  }
                 </ul>
+                <div className="toggle-container">
+                  <span className="darkmode-toggle">
+                    <label class="switch">
+                      <input checked={darkMode}
+                        onChange={toggleDarkMode}
+                        type="checkbox"
+                        className="checkbox"
+                        id="checkbox" 
+                      />
+                      <span class="slider round"></span>
+                    </label>
+                    <p>Dark Mode</p>
+                  </span>
+                </div>
             </div>
           </nav>
     )
