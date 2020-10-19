@@ -55,14 +55,14 @@ const Education = () => {
                     })}
                 </div>
                 <div className="edu-info">
-                <h3>{degree}</h3>
-                <h4>{institute}</h4>
-                <p className="edu-date">{time}</p>
-                <div className="edu-desc">
-                    <FaAngleDoubleRight className="edu-icon"></FaAngleDoubleRight>
-                    <p>{grade}</p>
+                    <h3>{degree}</h3>
+                    <h4>{institute}</h4>
+                    <p className="edu-date">{time}</p>
+                    <div className="edu-desc">
+                        <FaAngleDoubleRight className="edu-icon"></FaAngleDoubleRight>
+                        <p>{grade}</p>
+                    </div>
                 </div>
-            </div>
             </div>
             
         </div>

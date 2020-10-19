@@ -447,6 +447,15 @@ Education Section
 .active-btn {
   color: var(--clr-primary-5);
   box-shadow: 0 2px var(--clr-primary-5);
+  background: var(--clr-grey-10);
+  box-shadow: var(--dark-shadow);
+  padding: 10px;
+}
+
+.edu-info {
+  padding: 20px;
+  background: var(--clr-grey-10);
+  box-shadow: var(--dark-shadow);
 }
 
 .edu-info h3 {
@@ -490,9 +499,6 @@ Education Section
   }
   .edu-btn {
     margin-bottom: 1rem;
-  }
-  .active-btn {
-    box-shadow: -2px 0 var(--clr-primary-5);
   }
   .edu-btn:hover {
     box-shadow: -2px 0 var(--clr-primary-5);
