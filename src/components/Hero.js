@@ -1,6 +1,6 @@
 import React from "react"
 import { Container} from "reactstrap";
-import SocialLinks from "../constants/socialLinks"
+import socialLinks from '../constants/socialLinks'
 
 const Hero = () => {
 
@@ -14,7 +14,19 @@ const Hero = () => {
                     <button className="btn">
                         Contact Me
                     </button>
-                    <SocialLinks/>
+                    
+                    <ul className="social-links">
+                        { socialLinks.map(link => {
+                                return (
+                                    <li key={link.id}>
+                                        <a href={link.url} className="social-link">
+                                            {link.icon}
+                                        </a>
+                                    </li>
+                                )
+                            })
+                        }
+                    </ul>
                 </div>
             </Container>
         </div>

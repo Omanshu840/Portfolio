@@ -819,3 +819,21 @@ Skills
 progress {
   width: 100%;
 }
+
+/*
+=============== 
+Footer
+===============
+*/
+
+footer {
+  background-color: var(--clr-grey-10);  
+}
+
+footer .contact {
+  text-align: center;
+}
+
+footer .social-link {
+  margin: 0px 15px;
+}
