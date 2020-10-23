@@ -13,6 +13,13 @@ const activities = [
       company: "HackVerse NITK",
       date: "August 2020 - Present",
     },
+    {
+      id: 3,
+      imgLink: require('../img/activity3.jpeg'),
+      title: "Executive Member",
+      company: "Web Enthusiasts'​ Club NITK",
+      date: "October 2020 - Present",
+    },
   ]
   
   export default activities;
