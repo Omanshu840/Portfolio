@@ -64,10 +64,10 @@ const Education = () => {
                             <h3>{degree}</h3>
                             <h4>{institute}</h4>
                             <p className="edu-date">{time}</p>
-                            <div className="edu-desc">
+                            {/* <div className="edu-desc">
                                 <FaAngleDoubleRight className="edu-icon"></FaAngleDoubleRight>
                                 <p>{grade}</p>
-                            </div>
+                            </div> */}
                     </div>
                 </Fade>
             </div>
