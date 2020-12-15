@@ -18,17 +18,23 @@ Variables
 }
 
 .light-mode {
-  --pricolor-1: #fdfcfb;
-  --pricolor-2: #f6f2ea;
+  --navlinkcolor: #cbf1f5;
+  --navbarcolor: #39134e;
+  --pricolor-1: #e3fdfd;
+  --pricolor-2: #cbf1f5;
   --seccolor-1: #783884;
   --seccolor-2: #39134e;
+  --footercolor: #222831;
 }
 
 .dark-mode {
+  --navlinkcolor: #00C5C0;
+  --navbarcolor: #393e46;
   --pricolor-1: #222831;
   --pricolor-2: #393e46;
-  --seccolor-1: #ebd4d4;
-  --seccolor-2: #fff0f0;
+  --seccolor-2: #00C5C0;
+  --seccolor-1: #797A80;
+  --footercolor: #393e46;
 }
 
 /*
@@ -180,7 +186,7 @@ Navbar
     display: flex;
     align-items: center;
     z-index: 200;
-    background-color: var(--pricolor-2);
+    background-color: var(--navbarcolor);
   }
   .nav-center {
     width: 90vw;
@@ -194,7 +200,7 @@ Navbar
   }
 
   .nav-header h2 {
-    color: var(--seccolor-2);
+    color: var(--navlinkcolor);
   }
 
   .nav-header img {
@@ -204,7 +210,7 @@ Navbar
     font-size: 2rem;
     background: transparent;
     border-color: transparent;
-    color: var(--seccolor-2);
+    color: var(--navlinkcolor);
     cursor: pointer;
     transition: var(--transition);
   }
@@ -212,7 +218,7 @@ Navbar
     color: var(--seccolor-1);
   }
   .nav-links {
-    color: var(--seccolor-2);
+    color: var(--navlinkcolor);
     display: none;
   }
 
@@ -229,7 +235,7 @@ Navbar
     }
     .nav-links a {
       text-transform: capitalize;
-      color: var(--seccolor-1);
+      color: var(--navlinkcolor);
       font-weight: bold;
       letter-spacing: var(--spacing);
       transition: var(--transition);
@@ -907,8 +913,8 @@ Footer
 */
 
 footer {
-  background-color: var(--pricolor-2);
-  color: var(--seccolor-2);
+  background-color: var(--footercolor);
+  color: var(--navlinkcolor);
 }
 
 footer .contact {
@@ -916,13 +922,14 @@ footer .contact {
 }
 
 footer .social-link {
+  color: var(--navlinkcolor);
   margin: 0px 15px;
 }
 
 footer a {
-  color: var(--seccolor-1);
+  color: var(--navlinkcolor);
 }
 
 footer a:hover {
-  color: var(--pricolor-1);
+  color: var(--seccolor-1);
 }
