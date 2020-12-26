@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Activities from './components/Activities'
 import Footer from './components/Footer'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const App = () => {
 
@@ -22,13 +23,23 @@ const App = () => {
 
   return (
     <div className={darkMode ? "dark-mode" : "light-mode"}>
-      <Navbar toggleSidebar={toggleSidebar} toggleDarkMode={toggleDarkMode} />
-      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-      <Hero toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
-      <Education/>
-      <Activities />
-      <Projects/>
-      <Skills />
+      <BrowserRouter>
+        <Navbar toggleSidebar={toggleSidebar} toggleDarkMode={toggleDarkMode} />
+        <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+        <Switch>
+          <Route exact path="/Portfolio">
+            <Hero toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
+            <Education/>
+            <Activities />
+            <Projects limit={2}/>
+            <Skills />
+          </Route>
+
+          <Route exact path="/Portfolio/projects/">
+            <Projects limit={100}/>
+          </Route>
+        </Switch>
+      </BrowserRouter>
       <Footer />
     </div>
   );

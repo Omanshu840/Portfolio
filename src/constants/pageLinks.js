@@ -2,7 +2,7 @@ const pageLinks = [
   {
     id: 1,
     text: "Home",
-    url: "/",
+    url: "/Portfolio",
   },
   {
     id: 2,
@@ -12,7 +12,7 @@ const pageLinks = [
   {
     id: 3,
     text: "Projects",
-    url: "/projects/",
+    url: "/Portfolio/projects/",
   },
   {
     id: 4,

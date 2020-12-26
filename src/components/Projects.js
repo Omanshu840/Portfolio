@@ -17,34 +17,41 @@ class Projects extends React.Component {
                 <div className="section-center projects-center">
                     {
                         projects.map((item, index) => {
-                            return(
-                                <div className="project">
-                                    <img className="project-img" src={item.imgLink} alt="img" />
+                            if(index<= this.props.limit) {
+                                return(
+                                    <div className="project">
+                                        <img className="project-img" src={item.imgLink} alt="img" />
 
-                                    <Fade top>
-                                        <div className="project-info">
-                                            <span className="project-number">0{index + 1}.</span>
-                                            <h3>{item.title}</h3>
-                                            <p className="project-desc">
-                                                {item.description}
-                                            </p>
-                                            <div className="project-stack">
-                                                {item.stack.map(tool => {
-                                                    return <span className="stack-item">{tool}</span>
-                                                })}
+                                        <Fade top>
+                                            <div className="project-info">
+                                                <span className="project-number">0{index + 1}.</span>
+                                                <h3>{item.title}</h3>
+                                                <p className="project-desc">
+                                                    {item.description}
+                                                </p>
+                                                <div className="project-stack">
+                                                    {item.stack.map(tool => {
+                                                        return <span className="stack-item">{tool}</span>
+                                                    })}
+                                                </div>
+                                                <div className="project-links">
+                                                <a href={item.githubLink}>
+                                                    <FaGithubSquare className="project-icon" />
+                                                </a>
+                                                <a href={item.Link}>
+                                                    <FaShareSquare className="project-icon" />
+                                                </a>
+                                                </div>
                                             </div>
-                                            <div className="project-links">
-                                            <a href={item.githubLink}>
-                                                <FaGithubSquare className="project-icon" />
-                                            </a>
-                                            <a href={item.Link}>
-                                                <FaShareSquare className="project-icon" />
-                                            </a>
-                                            </div>
-                                        </div>
-                                    </Fade>
-                                </div>
-                            )
+                                        </Fade>
+                                    </div>
+                                )
+                            }
+                            else {
+                                return (
+                                    <div></div>
+                                )
+                            }
                         })
                     }
                 </div>

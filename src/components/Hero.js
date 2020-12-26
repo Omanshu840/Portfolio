@@ -3,14 +3,25 @@ import { Container} from "reactstrap";
 import socialLinks from '../constants/socialLinks'
 import Fade from 'react-reveal/Fade';
 
-const Hero = ({toggleDarkMode}) => {
+const Hero = ({toggleDarkMode, darkMode}) => {
 
     return (
         <div className="hero section-odd">
             <Container>
-                {/* <div className="toggle-container">
-                  <button onClick={toggleDarkMode}>Toggle Mode</button>
-                </div> */}
+                <div className="toggle-container">
+                  <span className="darkmode-toggle">
+                    <label class="switch">
+                      <input checked={darkMode}
+                        onChange={toggleDarkMode}
+                        type="checkbox"
+                        className="checkbox"
+                        id="checkbox" 
+                      />
+                      <span class="slider round"></span>
+                    </label>
+                    <p>Dark Mode</p>
+                  </span>
+                </div>
                 <div className="col-12 col-md-12 hero-text">
                     <Fade top>
                         <div className="underline"></div>

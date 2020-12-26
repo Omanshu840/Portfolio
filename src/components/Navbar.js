@@ -1,6 +1,10 @@
 import React from "react"
 import { FaAlignRight } from "react-icons/fa"
+import { Link } from "react-router-dom"
 import pageLinks from '../constants/pageLinks'
+import { FaSun } from "react-icons/fa";
+import { FaMoon } from "react-icons/fa";
+import { Button } from "reactstrap";
 
 const Navbar = ({ toggleSidebar, toggleDarkMode, darkMode}) => {
 
@@ -11,32 +15,23 @@ const Navbar = ({ toggleSidebar, toggleDarkMode, darkMode}) => {
                 <h2>O M</h2>
                 <button className="toggle-btn" onClick={toggleSidebar}>
                   <FaAlignRight></FaAlignRight>
-                </button> 
+                </button>
               </div>
                 <ul className="page-links nav-links">
                   {pageLinks.map(link => {
                     return (
                       <li key={link.id}>
-                        <a href={link.url}>{link.text}</a>
+                        <Link to={link.url}>{link.text}</Link>
                       </li>
                     )
                     })
                  }
+                 {/* <li>
+                    <Button>
+                      <FaMoon/>
+                    </Button>
+                  </li> */}
                 </ul>
-                <div className="toggle-container">
-                  <span className="darkmode-toggle">
-                    <label class="switch">
-                      <input checked={darkMode}
-                        onChange={toggleDarkMode}
-                        type="checkbox"
-                        className="checkbox"
-                        id="checkbox" 
-                      />
-                      <span class="slider round"></span>
-                    </label>
-                    <p>Dark Mode</p>
-                  </span>
-                </div>
             </div>
           </nav>
     )

@@ -7,7 +7,7 @@ class Skills extends React.Component {
 
         const data = {
             development: [["C++", "95"], ["Python", "66"], ["Java", "75"], ["HTML", "95"], ["CSS", "90"], ["Javascript", "66"], ["SQL", "66"]],
-            frameworks: [["Django", "66"], ["Flask", "80"], ["React", "75"]],
+            frameworks: [["Django", "66"], ["Flask", "80"], ["React", "85"], ["Node", "75"]],
         }
 
         return (
