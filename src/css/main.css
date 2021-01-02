@@ -767,7 +767,6 @@ Projects
   height: 19rem;
   width: 90vw;
   z-index: 1;
-  filter: brightness(50%);
   border-radius: var(--radius);
   box-shadow: var(--dark-shadow);
 }
