@@ -8,6 +8,7 @@ import Skills from './components/Skills'
 import Activities from './components/Activities'
 import Footer from './components/Footer'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import PageNotFound from './components/PageNotFound';
 
 const App = () => {
 
@@ -37,6 +38,10 @@ const App = () => {
 
           <Route exact path="/Portfolio/projects/">
             <Projects limit={100}/>
+          </Route>
+
+          <Route path="*" >
+            <PageNotFound/>  
           </Route>
         </Switch>
       </BrowserRouter>

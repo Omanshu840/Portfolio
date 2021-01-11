@@ -936,3 +936,21 @@ footer a {
 footer a:hover {
   color: var(--seccolor-1);
 }
+
+.notfoundpage {
+  text-align: center;
+  height: 70vh;
+}
+
+.notfoundpage .card {
+  background-color: var(--pricolor-2);
+  box-shadow: var(--dark-shadow);
+}
+
+.notfoundpage h1{
+  color: var(--seccolor-2);
+}
+
+.notfoundpage p{
+  color: var(--seccolor-2);
+}
