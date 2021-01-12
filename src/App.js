@@ -9,6 +9,7 @@ import Activities from './components/Activities'
 import Footer from './components/Footer'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import PageNotFound from './components/PageNotFound';
+import Contact from './components/Contact';
 
 const App = () => {
 
@@ -38,6 +39,10 @@ const App = () => {
 
           <Route exact path="/Portfolio/projects/">
             <Projects limit={100}/>
+          </Route>
+
+          <Route exact path="/Portfolio/contact/">
+            <Contact/>
           </Route>
 
           <Route path="*" >

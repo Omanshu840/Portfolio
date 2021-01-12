@@ -22,7 +22,7 @@ const pageLinks = [
   {
     id: 5,
     text: "Contact",
-    url: "/contact/",
+    url: "/Portfolio/contact/",
   },
 ]
 

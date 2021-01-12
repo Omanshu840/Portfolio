@@ -954,3 +954,40 @@ footer a:hover {
 .notfoundpage p{
   color: var(--seccolor-2);
 }
+
+.contact {
+  text-align: center;
+  color: var(--seccolor-2);
+}
+
+.contact .card {
+  background-color: var(--pricolor-2);
+  box-shadow: var(--dark-shadow);
+}
+
+.contact .contact-link a{
+  font-size: 1.75rem;
+  color: var(--seccolor-2);
+}
+
+.contact .contact-link a:hover{
+  color: var(--seccolor-1);
+}
+
+.contact .form {
+  text-align: left;
+}
+
+.contact .form label {
+  font-size: 1.5rem;
+}
+
+.contact .form input{
+  background-color: var(--pricolor-1);
+  color: var(--seccolor-2);
+}
+
+.contact .form textarea {
+  background-color: var(--pricolor-1);
+  color: var(--seccolor-2);
+}
